@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyecto escolar sobre aplicaciones web.">
+  <title>Examen | Aplicaciones Web</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/script.js" defer></script>
+  <script src="js/examen.js" defer></script>
+</head>
+<body>
+  <!-- Encabezado y menú de navegación -->
+  <header><div class="barra">
+    <a class="marca" href="index.html">Aplicaciones Web</a>
+    <nav aria-label="Menú principal"><a href="index.html">Inicio</a><a href="conceptos.html">Conceptos básicos</a><a href="tecnologias.html">Tecnologías web</a><a href="tipos.html">Tipos de aplicaciones</a><a href="examen.html" aria-current="page">Examen</a><a href="creditos.html">Créditos</a></nav>
+  </div></header>
+  <main>
+    <!-- Contenido principal de la página -->
+    <section class="intro"><h1>Examen de Aplicaciones Web</h1><p>Selecciona una respuesta por pregunta. Debes responder las diez preguntas antes de calificar.</p></section>
+<form id="examen">
+<fieldset class="quiz" data-pregunta="p1"><legend>1. ¿Qué es una aplicación web?</legend><label><input type="radio" name="p1" value="A"> A) Una pieza física de la computadora.</label><label><input type="radio" name="p1" value="B"> B) Un programa que se utiliza desde un navegador.</label><label><input type="radio" name="p1" value="C"> C) Un cable de red.</label><label><input type="radio" name="p1" value="D"> D) Una impresora.</label></fieldset>
+<fieldset class="quiz" data-pregunta="p2"><legend>2. ¿Qué tecnología organiza la estructura de una página?</legend><label><input type="radio" name="p2" value="A"> A) HTML.</label><label><input type="radio" name="p2" value="B"> B) Hosting.</label><label><input type="radio" name="p2" value="C"> C) HTTPS.</label><label><input type="radio" name="p2" value="D"> D) Dominio.</label></fieldset>
+<fieldset class="quiz" data-pregunta="p3"><legend>3. ¿Para qué se utiliza JavaScript principalmente en una página?</legend><label><input type="radio" name="p3" value="A"> A) Para fabricar el monitor.</label><label><input type="radio" name="p3" value="B"> B) Para registrar dominios.</label><label><input type="radio" name="p3" value="C"> C) Para añadir interactividad.</label><label><input type="radio" name="p3" value="D"> D) Para reemplazar Internet.</label></fieldset>
+<fieldset class="quiz" data-pregunta="p4"><legend>4. ¿Qué hace CSS?</legend><label><input type="radio" name="p4" value="A"> A) Guarda archivos en un servidor.</label><label><input type="radio" name="p4" value="B"> B) Crea una base de datos automáticamente.</label><label><input type="radio" name="p4" value="C"> C) Conecta físicamente los equipos.</label><label><input type="radio" name="p4" value="D"> D) Define la apariencia visual.</label></fieldset>
+<fieldset class="quiz" data-pregunta="p5"><legend>5. ¿Qué función cumple un servidor web?</legend><label><input type="radio" name="p5" value="A"> A) Escribir las tareas escolares.</label><label><input type="radio" name="p5" value="B"> B) Responder solicitudes y entregar recursos.</label><label><input type="radio" name="p5" value="C"> C) Mostrar solo el teclado.</label><label><input type="radio" name="p5" value="D"> D) Crear contraseñas por obligación.</label></fieldset>
+<fieldset class="quiz" data-pregunta="p6"><legend>6. ¿Para qué sirve una base de datos?</legend><label><input type="radio" name="p6" value="A"> A) Para almacenar y organizar información.</label><label><input type="radio" name="p6" value="B"> B) Para aumentar el brillo del monitor.</label><label><input type="radio" name="p6" value="C"> C) Para sustituir el navegador.</label><label><input type="radio" name="p6" value="D"> D) Para dibujar un teclado.</label></fieldset>
+<fieldset class="quiz" data-pregunta="p7"><legend>7. ¿Cuál es un ejemplo de aplicación educativa?</legend><label><input type="radio" name="p7" value="A"> A) Una calculadora física.</label><label><input type="radio" name="p7" value="B"> B) Un cable USB.</label><label><input type="radio" name="p7" value="C"> C) Una plataforma para realizar cursos y tareas.</label><label><input type="radio" name="p7" value="D"> D) Un enchufe.</label></fieldset>
+<fieldset class="quiz" data-pregunta="p8"><legend>8. ¿Qué permite hacer una tienda en línea?</legend><label><input type="radio" name="p8" value="A"> A) Actualizar el sistema operativo de todos los equipos.</label><label><input type="radio" name="p8" value="B"> B) Crear conexiones eléctricas.</label><label><input type="radio" name="p8" value="C"> C) Cambiar el tamaño de una pantalla.</label><label><input type="radio" name="p8" value="D"> D) Consultar y comprar productos por Internet.</label></fieldset>
+<fieldset class="quiz" data-pregunta="p9"><legend>9. ¿Qué ayuda a proteger la comunicación con un sitio web?</legend><label><input type="radio" name="p9" value="A"> A) Usar HTTPS y comprobar la dirección.</label><label><input type="radio" name="p9" value="B"> B) Compartir la contraseña.</label><label><input type="radio" name="p9" value="C"> C) Abrir todos los enlaces.</label><label><input type="radio" name="p9" value="D"> D) Desactivar las actualizaciones.</label></fieldset>
+<fieldset class="quiz" data-pregunta="p10"><legend>10. ¿Cuál es una buena práctica de seguridad?</legend><label><input type="radio" name="p10" value="A"> A) Usar la misma contraseña en todas las cuentas.</label><label><input type="radio" name="p10" value="B"> B) Compartir códigos de acceso.</label><label><input type="radio" name="p10" value="C"> C) Usar contraseñas únicas y evitar enlaces sospechosos.</label><label><input type="radio" name="p10" value="D"> D) Enviar datos personales a desconocidos.</label></fieldset>
+<button type="submit">Calificar examen</button><button type="button" id="reiniciar">Volver a intentar</button>
+</form>
+<section id="resultado" aria-live="polite"><h2>Resultado</h2><ol id="detalle"></ol></section>
+    <!-- Botones para recorrer el sitio -->
+    <div class="paginacion">
+      <div><a class="boton" href="tipos.html">Anterior</a></div>
+      <a class="boton" href="index.html">Inicio</a>
+      <div><a class="boton" href="creditos.html">Siguiente</a></div>
+    </div>
+  </main>
+  
+</body>
+</html>

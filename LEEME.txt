@@ -1,0 +1,28 @@
+PROYECTO ESCOLAR: APLICACIONES WEB
+==================================
+
+ESTRUCTURA
+- index.html
+- conceptos.html
+- tecnologias.html
+- tipos.html
+- seguridad.html
+- examen.html
+- creditos.html
+- css/estilos.css
+- js/script.js
+- js/examen.js
+- imagenes/ (ilustraciones SVG guardadas localmente)
+
+CÓMO USAR
+1. Descarga y extrae AplicacionesWeb.zip.
+2. Abre Sublime Text.
+3. Selecciona File > Open Folder y elige la carpeta AplicacionesWeb.
+4. Abre index.html en el navegador.
+5. Navega usando el menú superior y los botones inferiores.
+
+PERSONALIZACIÓN
+Abre creditos.html y reemplaza los campos entre corchetes con tus datos.
+
+IMÁGENES
+Las ilustraciones SVG están guardadas dentro de imagenes/. No dependen de enlaces externos ni requieren Internet.
